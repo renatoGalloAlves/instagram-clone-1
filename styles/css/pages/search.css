@@ -87,6 +87,14 @@ body header {
       background: transparent;
       height: 36px;
       font-size: 16px; }
+  body header .container-input {
+    display: flex; }
+    body header .container-input .icone-quadrado {
+      display: flex;
+      padding-right: 10px;
+      align-self: center;
+      width: 20px;
+      height: 20px; }
   body header .menu-links {
     width: 100%; }
     body header .menu-links .nav-list {
@@ -107,7 +115,12 @@ body header {
         border-radius: 6px;
         font-weight: 600;
         font-size: 14px;
-        line-height: 17px; }
+        line-height: 17px;
+        padding-right: 3px; }
+      body header .menu-links .nav-list .button-icon {
+        width: 10px;
+        height: 11px;
+        padding: 0 3px; }
 body .container-feed {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -1,11 +1,11 @@
 @import "../styles.scss";
 
 body {
-  .container{
-    @media (min-width: $breakpoint-tablet){
-    max-width: 960px;
-    margin: 0 auto;
-    background: $background-primary;
+  .container {
+    @media (min-width: $breakpoint-tablet) {
+      max-width: 960px;
+      margin: 0 auto;
+      background: $background-primary;
     }
 
   }
@@ -15,32 +15,34 @@ body {
     background: $background-primary;
     margin-bottom: 10px;
     width: 100%;
-    @media (min-width: $breakpoint-tablet){
+
+    @media (min-width: $breakpoint-tablet) {
       margin-bottom: 30px;
     }
 
-    .logo{
+    .logo {
       @include simple-flex(space-between, center, row);
       width: 100%;
       min-height: 44px;
       background-color: $background-secondary;
       padding: 10px 10px;
       box-sizing: border-box;
-    
+
       @media (min-width: $breakpoint-tablet) {
         background-color: $background-primary;
       }
-    
+
       .logo-img {
         width: 105px;
         height: auto;
+
         @media (min-width: $breakpoint-tablet) {
           background-color: $background-primary;
           width: 200px;
           height: auto;
         }
       }
-    
+
       .action-icon {
         width: 24px;
         height: auto;
@@ -75,6 +77,18 @@ body {
       }
     }
 
+    .container-input {
+      display: flex;
+
+      .icone-quadrado {
+        display: flex;
+        padding-right: 10px;
+        align-self: center;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
     .menu-links {
       width: 100%;
 
@@ -100,6 +114,13 @@ body {
           font-weight: 600;
           font-size: 14px;
           line-height: 17px;
+          padding-right: 3px;
+        }
+
+        .button-icon {
+          width: 10px;
+          height: 11px;
+          padding: 0 3px;
         }
       }
     }
@@ -113,9 +134,9 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    @media (min-width: $breakpoint-tablet){
+    @media (min-width: $breakpoint-tablet) {
       gap: 30px;
-      }
+    }
 
     .feed-img {
       display: block;
