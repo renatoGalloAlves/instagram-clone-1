@@ -188,6 +188,10 @@ main {
   .aside-container {
     @include simple-flex(flex-start, flex-start, column);
     min-width: 300px;
+    display: none;
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+    }
 
     .user-infos {
       @include simple-flex(flex-start, center);

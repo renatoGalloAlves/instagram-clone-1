@@ -29,15 +29,49 @@ html {
     .tab-bar {
       background-color: #fafafa; } }
 
+@media (min-width: 768px) {
+  body .container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fafafa; } }
 body header {
   background: #fafafa;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    body header {
+      margin-bottom: 30px; } }
+  body header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    min-height: 44px;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    box-sizing: border-box; }
+    @media (min-width: 768px) {
+      body header .logo {
+        background-color: #fafafa; } }
+    body header .logo .logo-img {
+      width: 105px;
+      height: auto; }
+      @media (min-width: 768px) {
+        body header .logo .logo-img {
+          background-color: #fafafa;
+          width: 200px;
+          height: auto; } }
+    body header .logo .action-icon {
+      width: 24px;
+      height: auto;
+      cursor: pointer; }
   body header .input-box {
     display: flex;
     justify-content: flex-start;
     align-items: 0;
     flex-direction: row;
-    width: 302px;
+    width: calc(100% - 12px);
     background-color: #ebe7e7;
     border-radius: 10px;
     box-sizing: border-box;
@@ -59,7 +93,10 @@ body header {
       display: flex;
       flex-direction: row;
       padding: 1px 8px;
-      gap: 6px; }
+      gap: 6px;
+      overflow-x: auto; }
+      body header .menu-links .nav-list::-webkit-scrollbar {
+        display: none; }
       body header .menu-links .nav-list .button {
         display: flex;
         justify-content: center;
@@ -74,8 +111,16 @@ body header {
 body .container-feed {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 100%;
+  gap: 1px;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: flex-start; }
+  @media (min-width: 768px) {
+    body .container-feed {
+      gap: 30px; } }
+  body .container-feed .feed-img {
+    display: block;
+    width: 100%;
+    min-width: 105px; }
 
 /*# sourceMappingURL=search.css.map */

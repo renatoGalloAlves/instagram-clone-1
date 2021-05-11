@@ -1,13 +1,57 @@
 @import "../styles.scss";
 
 body {
+  .container{
+    @media (min-width: $breakpoint-tablet){
+    max-width: 960px;
+    margin: 0 auto;
+    background: $background-primary;
+    }
+
+  }
+
+
   header {
     background: $background-primary;
     margin-bottom: 10px;
+    width: 100%;
+    @media (min-width: $breakpoint-tablet){
+      margin-bottom: 30px;
+    }
+
+    .logo{
+      @include simple-flex(space-between, center, row);
+      width: 100%;
+      min-height: 44px;
+      background-color: $background-secondary;
+      padding: 10px 10px;
+      box-sizing: border-box;
+    
+      @media (min-width: $breakpoint-tablet) {
+        background-color: $background-primary;
+      }
+    
+      .logo-img {
+        width: 105px;
+        height: auto;
+        @media (min-width: $breakpoint-tablet) {
+          background-color: $background-primary;
+          width: 200px;
+          height: auto;
+        }
+      }
+    
+      .action-icon {
+        width: 24px;
+        height: auto;
+        cursor: pointer;
+      }
+    }
+
 
     .input-box {
       @include simple-flex(flex-start, 0, row);
-      width: 302px;
+      width: calc(100% - 12px);
       background-color: #ebe7e7;
       border-radius: 10px;
       box-sizing: border-box;
@@ -39,11 +83,11 @@ body {
         flex-direction: row;
         padding: 1px 8px;
         gap: 6px;
-        // overflow-x: auto;
+        overflow-x: auto;
 
-        // &::-webkit-scrollbar {
-        //   display: none;
-        // }
+        &::-webkit-scrollbar {
+          display: none;
+        }
 
         .button {
           display: flex;
@@ -64,8 +108,20 @@ body {
   .container-feed {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
+    gap: 1px;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    @media (min-width: $breakpoint-tablet){
+      gap: 30px;
+      }
+
+    .feed-img {
+      display: block;
+      width: 100%;
+      min-width: 105px;
+
+    }
   }
 }
