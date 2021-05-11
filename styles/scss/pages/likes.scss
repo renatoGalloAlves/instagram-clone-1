@@ -1,0 +1,62 @@
+@import "../styles.scss";
+
+header {
+  background: $background-primary;
+  margin-bottom: 10px;
+  width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    @include simple-flex(space-between, center, row);
+    width: 100%;
+    min-height: 44px;
+    background-color: $background-secondary;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    @media (min-width: $breakpoint-tablet) {
+      background-color: $background-primary;
+    }
+
+    .logo-img {
+      width: 105px;
+      height: auto;
+
+      @media (min-width: $breakpoint-tablet) {
+        background-color: $background-primary;
+        width: 200px;
+        height: auto;
+      }
+    }
+
+    .action-icon {
+      width: 24px;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+
+  .menu-like{
+    .list-follow{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+
+      .button{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        width: 100%;
+        background-color:  $background-secondary;
+      } 
+    }
+  }
+}

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
+* {
+  font-family: Arial; }
+
+html {
+  font-size: 10px; }
+
+.tab-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: #f2f2f2;
+  position: sticky;
+  bottom: 0;
+  padding: 0 26px;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .tab-bar {
+      background-color: #fafafa; } }
+
+header {
+  background: #fafafa;
+  margin-bottom: 10px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    header {
+      margin-bottom: 30px; } }
+  header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    min-height: 44px;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    box-sizing: border-box; }
+    @media (min-width: 768px) {
+      header .logo {
+        background-color: #fafafa; } }
+    header .logo .logo-img {
+      width: 105px;
+      height: auto; }
+      @media (min-width: 768px) {
+        header .logo .logo-img {
+          background-color: #fafafa;
+          width: 200px;
+          height: auto; } }
+    header .logo .action-icon {
+      width: 24px;
+      height: auto;
+      cursor: pointer; }
+  header .menu-like .list-follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px; }
+    header .menu-like .list-follow .button {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      font-weight: 500;
+      font-size: 1.5rem;
+      width: 100%;
+      background-color: #f2f2f2; }
+
+/*# sourceMappingURL=likes.css.map */
